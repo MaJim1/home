@@ -1,0 +1,57 @@
+body {
+	margin: 0px;
+}
+
+header {
+    background-color: #551C00;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 150px;
+	z-index: 1; /* puts the header on the top */
+}
+
+header h1 {
+    color: #FFC6AA;
+	font-size: 36pt;
+}
+
+nav {
+    background-color: #AA5D39;
+	margin-top: 150px;
+    position: fixed;
+    align-items: center;
+    width: 200px;
+	height: 100%
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 15px 10px 15px 20px; /* top right bottom left */
+    text-decoration: none;
+	display: block;
+	font-size: 18pt;
+}
+
+nav a:hover {
+    background-color: #D48D6A;
+}
+
+#content {
+    padding-top: 170px;
+    padding-left: 240px;
+	height: 100%;
+	background-color: #FFC6AA;
+}
+
+p {
+	text-align: justify;
+	font-family: "Open Sans"; sans-serif;
+}
+
+h1 {
+	color: #551C00;
+	font-family: "Open Sans"; sans-serif;
+}
+/* color scheme: https://paletton.com/#uid=10i0u0kllllaFw0g0qFqFg0w0aF */
