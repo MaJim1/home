@@ -3,7 +3,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="main.css">
+		
+		<!-- loads stylesheet for screens with a width higher than 900px -->
+        <link rel="stylesheet" type="text/css" href="widescreen.css" media="screen and (min-width: 901px)">
+		
+		<!-- loads stylesheet for screens with a width lower than 900px -->
+        <link rel="stylesheet" type="text/css" href="smallscreen.css" media="screen and (max-width: 900px)">
+		
         <title>My First Website</title>
     </head>
 
@@ -14,8 +20,12 @@
 
 		<nav>
 			<a href="index.html">Home</a>
-			<a href="secondpage.html">The Years of the Trees</a>
-			<a href="thirdpage.html">Third</a>
+			<a href="before-years-of-the-trees.html">Before The Years of the Trees</a>
+			<a href="years-of-the-trees.html">The Years of the Trees</a>
+			<a href="first-age.html">The First Age</a>
+			<a href="second-age.html">The Second Age</a>
+			<a href="third-age.html">The Third Age</a>
+			<a href="fourth-age.html">The Fourth Age and Beyond</a>
 		</nav>
 
 		<div id="content">
