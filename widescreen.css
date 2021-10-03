@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+    padding: 0px
 }
 
 header {
@@ -7,22 +8,23 @@ header {
 	text-align: center;
 	position: fixed; /* stops the header from moving when scrolling */
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	z-index: 1; /* puts the header on the top */
 }
 
 header h1 { /* selects all h1s that are inside headers */
     color: #FFC6AA;
-	font-size: 36pt;
+	font-size: 30pt;
 }
 
 nav {
     background-color: #AA5D39;
-	margin-top: 150px;
+	margin-top: 100px;
     position: fixed; /* stops the navbar from moving when scrolling */
     align-items: center;
     width: 200px;
-	height: 100%
+	height: 100%;
+    overflow-y: auto; 
 }
 
 nav a { /* selects all a's that are inside navs */
@@ -31,27 +33,73 @@ nav a { /* selects all a's that are inside navs */
     padding: 15px 10px 15px 20px; /* top right bottom left */
     text-decoration: none;
 	display: block;
-	font-size: 18pt;
+	font-size: 14pt;
 }
 
 nav a:hover { /* selects anchors that are being hovered over */
     background-color: #D48D6A;
 }
 
-#content {
-    padding-top: 170px;
+#content-container {
+    padding-top: 120px;
     padding-left: 240px;
 	height: 100%;
 	background-color: #FFC6AA;
 }
 
-p {
-	text-align: justify;
-	font-family: "Open Sans"; sans-serif;
+#text-container {
+    width: 60%;
+    display: inline-block;
 }
 
-h1 {
-	color: #551C00;
-	font-family: "Open Sans"; sans-serif;
+#images-container {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+    width: 30%;
+    padding-top: 30px;
 }
+
+#content p {
+	text-align: justify;
+    text-indent: 20px;
+}
+
+h1, h2, p, li {
+	color: #551C00;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+    font-family: "Open Sans", sans-serif;
+}
+
+#images-container img {
+    width: 100%;
+}
+
+.caption {
+    font-size: 10pt;
+    text-align: center;
+}
+
+footer {
+    background-color: #D48D6A;
+    padding: 10px 10px 10px 250px; /* top right bottom left */
+    margin: 0px;
+}
+
+footer h1 { /* selects all h1s that are inside headers */
+	font-size: 18pt;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+:target { /* selects the element targeted by an internal link */
+    background-color: #ffC6AA;
+ }
+
+
 /* color scheme: https://paletton.com/#uid=10i0u0kllllaFw0g0qFqFg0w0aF */
