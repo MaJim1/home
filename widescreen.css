@@ -1,6 +1,6 @@
-body {
+html, body {
 	margin: 0px;
-    padding: 0px
+    padding: 0px;
 }
 
 header {
@@ -23,7 +23,7 @@ nav {
     position: fixed; /* stops the navbar from moving when scrolling */
     align-items: center;
     width: 200px;
-	height: 100%;
+	height: calc(100% - 100px);
     overflow-y: auto; 
 }
 
@@ -60,7 +60,7 @@ nav a:hover { /* selects anchors that are being hovered over */
     padding-top: 30px;
 }
 
-#content p {
+#text-container p {
 	text-align: justify;
     text-indent: 20px;
 }
@@ -85,7 +85,7 @@ a {
 
 footer {
     background-color: #D48D6A;
-    padding: 10px 10px 10px 250px; /* top right bottom left */
+    padding: 10px 10px 10px 240px; /* top right bottom left */
     margin: 0px;
 }
 
@@ -99,7 +99,6 @@ footer h1 { /* selects all h1s that are inside headers */
 
 :target { /* selects the element targeted by an internal link */
     background-color: #ffC6AA;
- }
-
+}
 
 /* color scheme: https://paletton.com/#uid=10i0u0kllllaFw0g0qFqFg0w0aF */
