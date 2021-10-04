@@ -1,3 +1,4 @@
+/* removes default margin and padding from the body */
 html, body {
 	margin: 0px;
     padding: 0px;
@@ -23,16 +24,16 @@ nav {
     position: fixed; /* stops the navbar from moving when scrolling */
     align-items: center;
     width: 200px;
-	height: calc(100% - 100px);
-    overflow-y: auto; 
+	height: calc(100% - 100px); /* calculates 100% - 100px */
+    overflow-y: auto; /* creates a scrollbar when the elements can't fit */
 }
 
 nav a { /* selects all a's that are inside navs */
     color: white;
     text-align: center;
     padding: 15px;
-    text-decoration: none;
-	display: block;
+    text-decoration: none; /* removes the underline */
+	display: block; /* makes the link into a block that resembles a button */
 	font-size: 14pt;
 }
 
@@ -49,18 +50,18 @@ nav a:hover { /* selects anchors that are being hovered over */
 
 #text-container {
     width: 60%;
-    display: inline-block;
+    display: inline-block; /* allows other elements to be displayed on the same line */
 }
 
 #images-container {
-    display: inline-block;
-    list-style: none;
+    display: inline-block; /* allows other elements to be displayed on the same line */
+    list-style: none; /* removed the bullet points */
     vertical-align: top;
     width: 30%;
     padding-top: 30px;
 }
 
-#text-container p {
+#text-container p { /* selects all p elements that are in #text-container */
 	text-align: justify;
     text-indent: 20px;
 }
@@ -74,7 +75,7 @@ a {
     font-family: "Open Sans", sans-serif;
 }
 
-#images-container img {
+#images-container img { /* selects all img elements that are in #images-container */
     width: 100%;
 }
 
@@ -89,7 +90,7 @@ footer {
     margin: 0px;
 }
 
-footer h1 { /* selects all h1s that are inside headers */
+footer h1 { /* selects all h1s that are inside footers */
 	font-size: 18pt;
 }
 
@@ -98,8 +99,8 @@ footer h1 { /* selects all h1s that are inside headers */
     text-align: center;
     padding: 15px;
     width: 80px;
-    text-decoration: none;
-	display: inline-block;
+    text-decoration: none; /* removes the underline */
+	display: inline-block; /* makes the link into a block and allows other elements to be displayed on the same line */
 	font-size: 14pt;
     background-color: #AA5D39;
 }
@@ -109,8 +110,8 @@ footer h1 { /* selects all h1s that are inside headers */
 }
 
 #previous-next-container {
-    display: flex;
-    justify-content: center;
+    display: flex; /* defines a flex container: a container with more options for styling */
+    justify-content: center; /* centers the div using a flex container property */
     margin-top: 40px;
     margin-bottom: 20px;
 }
