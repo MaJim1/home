@@ -112,7 +112,7 @@ footer h1 { /* selects all h1s that are inside footers */
 #previous-next-container {
     display: flex; /* defines a flex container: a container with more options for styling */
     justify-content: center; /* centers the div using a flex container property */
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
