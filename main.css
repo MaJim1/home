@@ -42,6 +42,7 @@ nav a:hover { /* selects anchors that are being hovered over */
 }
 
 #content-container {
+    display: flex; /* defines a flex container: a container with more options for styling */
     padding-top: 120px;
     padding-left: 240px;
 	height: 100%;
@@ -54,10 +55,13 @@ nav a:hover { /* selects anchors that are being hovered over */
 }
 
 #images-container {
-    display: inline-block; /* allows other elements to be displayed on the same line */
+    justify-self: stretch; /* stretches the height to match the height of the parent */
+    display: inline-flex; /* allows other elements to be displayed on the same line and defines a flexbox */
+    justify-content: space-between; /* adds space between each element */
+    flex-basis: 30%; /* width but for flex boxes */
+    flex-direction: column; /* sets the main axis to up and down */
     list-style: none; /* removed the bullet points */
     vertical-align: top;
-    width: 30%;
     padding-top: 30px;
 }
 
@@ -122,6 +126,45 @@ footer h1 { /* selects all h1s that are inside footers */
 
 :target { /* selects the element targeted by an internal link */
     background-color: #ffC6AA;
+}
+
+/* This section hides images when screen is to wide: */
+
+@media screen and (min-width: 830px) { /* this part activates if the screen width goes below above 829px */
+    .remove-image-830px {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) { /* this part activates if the screen width goes below above 999px */
+    .remove-image-1000px {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* this part activates if the screen width goes below above 1199px */
+    .remove-image-1200px {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1500px) { /* this part activates if the screen width goes below above 1499px */
+    .remove-image-1500px {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1800px) { /* this part activates if the screen width goes below above 1799px */
+    .remove-image-1800px {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 830px) { /* this part activates if the screen width goes below 831px */
+    header h1 {
+        font-size: 24pt;
+    }
 }
 
 /* color scheme: https://paletton.com/#uid=10i0u0kllllaFw0g0qFqFg0w0aF */
