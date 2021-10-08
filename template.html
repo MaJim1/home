@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
+<!-- Template; Replace: Title in Head, Title in Body, Headings, Paragraphs, Images (and Captions), Citations -->
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="main.css">
 		
-        <title>Second Age | History of LOTR</title>
+        <title>Title | History of LOTR</title>
     </head>
 
     <body>
@@ -28,28 +30,41 @@
 
             <!-- Used to keep the text on the left -->
             <div id="text-container">
-                <h1>The Second Age</h1>
-                <h2>(Not) Coming Soon</h2>
+                <h1>Title</h1>
                 
+                <h2>Heading</h2>
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+
+                <h2>Heading</h2>
+                <p>Paragraph</p>
+                <p>Paragraph</p>
+
                 <!-- Used to center the buttons -->
                 <div id="previous-next-container">
-                    <a id="previous" href="first-age.html">Previous</a>
-                    <a id="next" href="third-age.html">Next</a>
+                    <a id="previous" href="index.html">Previous</a>
+                    <a id="next" href="years-of-the-trees.html">Next</a>
                 </div>
             </div>
 
             <!-- Used to move all images to the right of the text; Each li element contains an image and a caption -->
             <ul id="images-container">
+                <li>
+                    <img src="images/image1.jpg" alt="Image 1">
+                    <p class="caption">Image 1. <a href="#source-1">Source (#1)</a></p>
+                </li>
             </ul>
         </div>
 
         <footer>
-            <h1>No Sources</h1>
-
+            <h1>Sources:</h1>
+            <ol>
+                <li id="source-1">Title, source-website.com (<a href="link-url">link-url</a>). Retrieved YYYY-MM-DD.</li>
+            </ol>
             <p>Information taken from <cite>The Lord of the Rings</cite>, <cite>The Silmarillion</cite>, and other books by J. R. R. Tolkien.</p>
 
             <!-- The validator link for the CSS file is on the homepage -->
-            <a href="https://validator.w3.org/check?uri=https://MaJim1.github.io/home/second-age.html"><img src="images/w3c_logo.png" alt="W3C Logo" height="30" width="30"></a>
+            <a href="https://validator.w3.org/check?uri=https://MaJim1.github.io/home/page.html"><img src="images/w3c_logo.png" alt="W3C Logo" height="30" width="30"></a>
         </footer>
     </body>
 </html>
