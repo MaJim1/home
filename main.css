@@ -4,6 +4,10 @@ html, body {
     padding: 0px;
 }
 
+html {
+    height: 100%
+}
+
 header {
     background-color: #551C00;
 	text-align: center;
@@ -45,7 +49,8 @@ nav a:hover { /* selects anchors that are being hovered over */
     display: flex; /* defines a flex container: a container with more options for styling */
     padding-top: 120px;
     padding-left: 240px;
-	height: 100%;
+	height: auto;
+    min-height: 100vh;
 	background-color: #FFC6AA;
 }
 
@@ -86,6 +91,12 @@ a {
 .caption {
     font-size: 10pt;
     text-align: center;
+}
+
+.source-link {
+    vertical-align: super; /* superscript */
+    font-size: 0.8em;
+    text-decoration: none; /* removes the underline */
 }
 
 footer {
