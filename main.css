@@ -1,6 +1,6 @@
 /* removes default margin and padding from the body */
 html, body {
-	margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -10,25 +10,25 @@ html {
 
 header {
     background-color: #551C00;
-	text-align: center;
-	position: fixed; /* stops the header from moving when scrolling */
-	width: 100%;
-	height: 100px;
-	z-index: 1; /* puts the header on the top */
+    text-align: center;
+    position: fixed; /* stops the header from moving when scrolling */
+    width: 100%;
+    height: 100px;
+    z-index: 1; /* puts the header on the top */
 }
 
 header h1 { /* selects all h1s that are inside headers */
     color: #FFC6AA;
-	font-size: 30pt;
+    font-size: 30pt;
 }
 
 nav {
     background-color: #AA5D39;
-	margin-top: 100px;
+    margin-top: 100px;
     position: fixed; /* stops the navbar from moving when scrolling */
     align-items: center;
     width: 200px;
-	height: calc(100% - 100px); /* calculates 100% - 100px */
+    height: calc(100% - 100px); /* calculates 100% - 100px */
     overflow-y: auto; /* creates a scrollbar when the elements can't fit */
 }
 
@@ -37,8 +37,8 @@ nav a { /* selects all a's that are inside navs */
     text-align: center;
     padding: 15px;
     text-decoration: none; /* removes the underline */
-	display: block; /* makes the link into a block that resembles a button */
-	font-size: 14pt;
+    display: block; /* makes the link into a block that resembles a button */
+    font-size: 14pt;
 }
 
 nav a:hover { /* selects anchors that are being hovered over */
@@ -49,9 +49,9 @@ nav a:hover { /* selects anchors that are being hovered over */
     display: flex; /* defines a flex container: a container with more options for styling */
     padding-top: 120px;
     padding-left: 240px;
-	height: auto;
+    height: auto;
     min-height: 100vh;
-	background-color: #FFC6AA;
+    background-color: #FFC6AA;
 }
 
 #text-container {
@@ -71,13 +71,13 @@ nav a:hover { /* selects anchors that are being hovered over */
 }
 
 #text-container p { /* selects all p elements that are in #text-container */
-	text-align: justify;
+    text-align: justify;
     text-indent: 20px;
 }
 
 h1, h2, p, li {
-	color: #551C00;
-	font-family: "Open Sans", sans-serif;
+    color: #551C00;
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -106,7 +106,7 @@ footer {
 }
 
 footer h1 { /* selects all h1s that are inside footers */
-	font-size: 18pt;
+    font-size: 18pt;
 }
 
 #previous, #next {
@@ -115,8 +115,8 @@ footer h1 { /* selects all h1s that are inside footers */
     padding: 15px;
     width: 80px;
     text-decoration: none; /* removes the underline */
-	display: inline-block; /* makes the link into a block and allows other elements to be displayed on the same line */
-	font-size: 14pt;
+    display: inline-block; /* makes the link into a block and allows other elements to be displayed on the same line */
+    font-size: 14pt;
     background-color: #AA5D39;
 }
 
